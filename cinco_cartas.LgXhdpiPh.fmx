@@ -1,0 +1,247 @@
+﻿inherited Form2_LgXhdpiPh: TForm2_LgXhdpiPh
+  ClientHeight = 696
+  ClientWidth = 448
+  DesignerMasterStyle = 3
+  inherited й: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ц: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited у: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited к: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited е: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited н: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited г: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ш: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ф: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ы: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited в: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited а: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited п: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited р: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited о: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited л: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited я: TButton
+    Position.X = 24.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ч: TButton
+    Position.X = 64.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited с: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited м: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited и: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited т: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ь: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited б: TButton
+    Position.X = 304.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited щ: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited з: TButton
+    Position.X = 384.000000000000000000
+    Position.Y = 512.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited х: TButton
+    Position.X = 184.000000000000000000
+    Position.Y = 632.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ъ: TButton
+    Position.X = 264.000000000000000000
+    Position.Y = 632.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited д: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ж: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 632.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited э: TButton
+    Position.X = 224.000000000000000000
+    Position.Y = 632.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited enter: TButton
+    Position.X = 384.000000000000000000
+    Position.Y = 552.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ю: TButton
+    Position.X = 344.000000000000000000
+    Position.Y = 592.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited delete: TButton
+    Enabled = False
+    Position.X = 344.000000000000000000
+    Position.Y = 632.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ё: TButton
+    Position.X = 144.000000000000000000
+    Position.Y = 632.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited R11: TButton
+    TabOrder = 68
+  end
+  inherited R21: TButton
+    TabOrder = 66
+  end
+  inherited R41: TButton
+    TabOrder = 59
+  end
+  inherited R61: TButton
+    TabOrder = 63
+  end
+  inherited R12: TButton
+    TabOrder = 72
+  end
+  inherited R22: TButton
+    TabOrder = 64
+  end
+  inherited R32: TButton
+    TabOrder = 53
+  end
+  inherited R62: TButton
+    TabOrder = 57
+  end
+  inherited R13: TButton
+    TabOrder = 67
+  end
+  inherited R23: TButton
+    TabOrder = 58
+  end
+  inherited R43: TButton
+    TabOrder = 62
+  end
+  inherited R33: TButton
+    TabOrder = 46
+  end
+  inherited R63: TButton
+    TabOrder = 51
+  end
+  inherited R14: TButton
+    TabOrder = 61
+  end
+  inherited R24: TButton
+    TabOrder = 52
+  end
+  inherited R44: TButton
+    TabOrder = 56
+  end
+  inherited R34: TButton
+    TabOrder = 44
+  end
+  inherited R15: TButton
+    TabOrder = 55
+  end
+  inherited R25: TButton
+    TabOrder = 47
+  end
+  inherited R45: TButton
+    TabOrder = 50
+  end
+  inherited R65: TButton
+    TabOrder = 45
+  end
+  inherited Label1: TLabel
+    TabOrder = 69
+  end
+end

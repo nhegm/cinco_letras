@@ -1,0 +1,74 @@
+inherited Form2_XLgXhdpiTb: TForm2_XLgXhdpiTb
+  ClientHeight = 1256
+  ClientWidth = 800
+  DesignerMasterStyle = 3
+  inherited delete: TButton
+    Enabled = False
+  end
+  inherited R11: TButton
+    TabOrder = 68
+  end
+  inherited R21: TButton
+    TabOrder = 66
+  end
+  inherited R41: TButton
+    TabOrder = 59
+  end
+  inherited R61: TButton
+    TabOrder = 63
+  end
+  inherited R12: TButton
+    TabOrder = 72
+  end
+  inherited R22: TButton
+    TabOrder = 64
+  end
+  inherited R32: TButton
+    TabOrder = 53
+  end
+  inherited R62: TButton
+    TabOrder = 57
+  end
+  inherited R13: TButton
+    TabOrder = 67
+  end
+  inherited R23: TButton
+    TabOrder = 58
+  end
+  inherited R43: TButton
+    TabOrder = 62
+  end
+  inherited R33: TButton
+    TabOrder = 46
+  end
+  inherited R63: TButton
+    TabOrder = 51
+  end
+  inherited R14: TButton
+    TabOrder = 61
+  end
+  inherited R24: TButton
+    TabOrder = 52
+  end
+  inherited R44: TButton
+    TabOrder = 56
+  end
+  inherited R34: TButton
+    TabOrder = 44
+  end
+  inherited R15: TButton
+    TabOrder = 55
+  end
+  inherited R25: TButton
+    TabOrder = 47
+  end
+  inherited R45: TButton
+    TabOrder = 50
+  end
+  inherited R65: TButton
+    TabOrder = 45
+  end
+  inherited Label1: TLabel
+    TabOrder = 69
+  end
+end
