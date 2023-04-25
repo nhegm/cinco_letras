@@ -79,7 +79,7 @@ type
     R55: TButton;
     Label1: TLabel;
     Label2: TLabel;
-    Label3: TLabel;
+    InfoLabel: TLabel;
     start: TButton;
     stats: TButton;
     procedure йClick(Sender: TObject);
@@ -133,6 +133,8 @@ implementation
 {$R *.fmx}
 {$R *.XLgXhdpiTb.fmx ANDROID}
 {$R *.LgXhdpiPh.fmx ANDROID}
+{$R *.Windows.fmx MSWINDOWS}
+
 const voc: array [1..1550] of string [5]=('аббат','абзац','аборт','абрис',
 'абхаз','аванс','аврал','автол','автор',
 'агава','агент','адрес','адыги','азарт','аймак','актёр','актив','акула',
@@ -308,7 +310,7 @@ const voc: array [1..1550] of string [5]=('аббат','абзац','аборт','абрис',
 'юноша','юрист','ябеда','ягода','ягуар','яичко','якорь','ямщик','ярлык',
 'ясень','яства');
 
-var row,s,check,otvet: string [5];
+var row,s,check,otvet,colorstr: string [5];
     rc1, rc2, rc3, rc4, rc5: char;               // буквы, что пишутся в строки
     input: text;
     i,j,k,wins: integer;                              // разные счетчики
@@ -2189,6 +2191,12 @@ begin
             end;
   row:=rc1+rc2+rc3+rc4+rc5;
   //  label1.Text:=row;
+  for i:=1 to 6 do begin
+    colorstr:=words[i];
+    for j := 1 to 5 do
+      if colorstr[j]=check[j] then
+        а.TextSettings.FontColor:=TAlphaColorRec.Green;
+    end;
 end;
 
 procedure TForm2.пClick(Sender: TObject);
@@ -4701,6 +4709,7 @@ end;
 
 procedure TForm2.startClick(Sender: TObject);
 begin
+  InfoLabel.TextSettings.FontColor:=TAlphaColorRec.Black;
   delete.Enabled:=true;
   enter.Enabled:=true;
 (*  AssignFile(input, '.\assets\internal\rus_5_down.txt');
@@ -4715,7 +4724,8 @@ begin
 //  label2.Text:=a[k];
   //  label1.Text:='';
   k:=random(1550)+1;
-  label3.Text:='Погнали!';
+//  k:=1;
+  InfoLabel.Text:='Погнали!';
  // closefile(input);
   otvet:='';
     for i:=1 to 5 do begin
@@ -4996,7 +5006,7 @@ end;
 procedure TForm2.enterClick(Sender: TObject);
 begin
   if rc5<>#0 then begin
-    label3.Text:='';
+    InfoLabel.Text:='';
     j:=1;
     f:=false;
     check:=voc[k];       //слово на проверку check
@@ -5125,13 +5135,13 @@ begin
 
                           end
         end else begin
-            label3.TextSettings.FontColor:=TAlphaColorRec.Red;
-            label3.Text:='Такого слова не существует';
+            InfoLabel.TextSettings.FontColor:=TAlphaColorRec.Red;
+            InfoLabel.Text:='Такого слова не существует';
 
             end;
   end;
   if (words[6]<>'') and (words[6]<>check) then
-    label3.Text:='Увы и ах, мой дорогой, не получилось, не срослось.';
+    InfoLabel.Text:='Увы и ах, мой дорогой. Это было слово '+check;
   if row=check then begin
     inc(wins);
     stats.Text:=inttostr(wins);
