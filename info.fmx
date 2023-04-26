@@ -1,0 +1,34 @@
+object infoForm: TinfoForm
+  Left = 0
+  Top = 0
+  Border.Styling = False
+  BorderIcons = []
+  BorderStyle = None
+  Caption = 'infoForm'
+  ClientHeight = 300
+  ClientWidth = 300
+  Position = Default
+  FormStyle = Popup
+  FormFactor.Width = 300
+  FormFactor.Height = 300
+  FormFactor.Devices = [iPhone]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object Button1: TButton
+    Position.X = 104.000000000000000000
+    Position.Y = 256.000000000000000000
+    Size.Width = 84.000000000000000000
+    Size.Height = 36.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Button1'
+    OnClick = Button1Click
+  end
+  object infoText: TText
+    Position.X = 37.000000000000000000
+    Position.Y = 19.000000000000000000
+    Size.Width = 225.000000000000000000
+    Size.Height = 225.000000000000000000
+    Size.PlatformDefault = False
+  end
+end

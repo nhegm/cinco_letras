@@ -1,0 +1,479 @@
+﻿inherited Form2_LgXhdpiPh: TForm2_LgXhdpiPh
+  ClientHeight = 696
+  ClientWidth = 448
+  DesignerMasterStyle = 3
+  inherited info: TButton
+    Position.Y = 11.000000000000000000
+  end
+  inherited settings: TButton
+    Position.Y = 11.000000000000000000
+  end
+  inherited meaning: TButton
+    Position.Y = 11.000000000000000000
+  end
+  inherited й: TButton
+    StyledSettings = []
+    Position.X = 6.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ц: TButton
+    Position.X = 39.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited у: TButton
+    Position.X = 72.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited к: TButton
+    Position.X = 105.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited е: TButton
+    Position.X = 138.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited н: TButton
+    Position.X = 171.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited г: TButton
+    Position.X = 204.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ш: TButton
+    Position.X = 237.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ф: TButton
+    Position.X = 6.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ы: TButton
+    Position.X = 39.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited в: TButton
+    Position.X = 72.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited а: TButton
+    Position.X = 105.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited п: TButton
+    Position.X = 138.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited р: TButton
+    Position.X = 171.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited о: TButton
+    Position.X = 204.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited л: TButton
+    Position.X = 237.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited я: TButton
+    Position.X = 22.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ч: TButton
+    Position.X = 55.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited с: TButton
+    Position.X = 88.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited м: TButton
+    Position.X = 121.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited и: TButton
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited т: TButton
+    Position.X = 187.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ь: TButton
+    Position.X = 220.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited б: TButton
+    Position.X = 253.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited щ: TButton
+    Position.X = 270.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited з: TButton
+    Position.X = 303.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited х: TButton
+    Position.X = 336.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ъ: TButton
+    Position.X = 369.000000000000000000
+    Position.Y = 584.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited д: TButton
+    Position.X = 270.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ж: TButton
+    Position.X = 303.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited э: TButton
+    Position.X = 336.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited enter: TButton
+    Position.X = 369.000000000000000000
+    Position.Y = 637.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+    TextSettings.VertAlign = Trailing
+  end
+  inherited ю: TButton
+    Position.X = 286.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited delete: TButton
+    Enabled = False
+    Position.X = 352.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited ё: TButton
+    Position.X = 319.000000000000000000
+    Position.Y = 690.000000000000000000
+    Size.Width = 35.000000000000000000
+    Size.Height = 45.000000000000000000
+    TextSettings.Font.Family = 'Verdana'
+  end
+  inherited R11: TButton
+    Position.X = 30.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 68
+  end
+  inherited R21: TButton
+    Position.X = 30.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 66
+  end
+  inherited R41: TButton
+    Position.X = 30.000000000000000000
+    Position.Y = 281.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 59
+  end
+  inherited R31: TButton
+    Position.X = 30.000000000000000000
+    Position.Y = 212.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R61: TButton
+    Position.X = 30.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 63
+  end
+  inherited R51: TButton
+    Position.X = 30.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R12: TButton
+    Position.X = 99.000000000000000000
+    Position.Y = 73.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 72
+  end
+  inherited R22: TButton
+    Position.X = 99.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 64
+  end
+  inherited R42: TButton
+    Position.X = 99.000000000000000000
+    Position.Y = 281.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R32: TButton
+    Position.X = 99.000000000000000000
+    Position.Y = 212.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 53
+  end
+  inherited R62: TButton
+    Position.X = 99.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 57
+  end
+  inherited R52: TButton
+    Position.X = 99.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R13: TButton
+    Position.X = 169.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 67
+  end
+  inherited R23: TButton
+    Position.X = 169.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 58
+  end
+  inherited R43: TButton
+    Position.X = 169.000000000000000000
+    Position.Y = 281.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 62
+  end
+  inherited R33: TButton
+    Position.X = 169.000000000000000000
+    Position.Y = 212.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 46
+  end
+  inherited R63: TButton
+    Position.X = 169.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 51
+  end
+  inherited R53: TButton
+    Position.X = 169.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R14: TButton
+    Position.X = 238.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 61
+  end
+  inherited R24: TButton
+    Position.X = 238.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 52
+  end
+  inherited R44: TButton
+    Position.X = 238.000000000000000000
+    Position.Y = 281.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 56
+  end
+  inherited R34: TButton
+    Position.X = 238.000000000000000000
+    Position.Y = 212.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 44
+  end
+  inherited R64: TButton
+    Position.X = 238.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R54: TButton
+    Position.X = 238.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R15: TButton
+    Position.X = 307.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 55
+  end
+  inherited R25: TButton
+    Position.X = 307.000000000000000000
+    Position.Y = 142.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 47
+  end
+  inherited R45: TButton
+    Position.X = 307.000000000000000000
+    Position.Y = 281.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 50
+  end
+  inherited R35: TButton
+    Position.X = 307.000000000000000000
+    Position.Y = 212.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited R65: TButton
+    Position.X = 307.000000000000000000
+    Position.Y = 420.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+    TabOrder = 45
+  end
+  inherited R55: TButton
+    Position.X = 307.000000000000000000
+    Position.Y = 350.000000000000000000
+    Size.Width = 70.000000000000000000
+    Size.Height = 70.000000000000000000
+  end
+  inherited Label1: TLabel
+    Position.Y = 50.000000000000000000
+    TabOrder = 69
+  end
+  inherited Label2: TLabel
+    Position.Y = 50.000000000000000000
+  end
+  inherited InfoLabel: TLabel
+    Position.X = 72.000000000000000000
+    Position.Y = 498.000000000000000000
+    Size.Width = 266.000000000000000000
+    Size.Height = 63.000000000000000000
+    TextSettings.VertAlign = Leading
+  end
+  inherited start: TButton
+    Position.Y = 11.000000000000000000
+  end
+  inherited stats: TButton
+    Position.Y = 11.000000000000000000
+  end
+end

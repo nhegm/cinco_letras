@@ -119,6 +119,7 @@ type
     procedure enterClick(Sender: TObject);
     procedure startClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
+    procedure infoClick(Sender: TObject);
 
 
   private
@@ -132,6 +133,7 @@ var
 
 implementation
 
+uses info;
 {$R *.fmx}
 {$R *.XLgXhdpiTb.fmx ANDROID}
 {$R *.LgXhdpiPh.fmx ANDROID}
@@ -356,6 +358,17 @@ begin
   keys[31]:=ю;
   keys[32]:=я;
   keys[33]:=ё;
+end;
+
+
+
+procedure TForm2.infoClick(Sender: TObject);
+var
+ res:word;
+begin
+  // вызываем дочернюю форму
+  infoForm.Show;
+
 end;
 
 procedure matches (s1,s2: string);
@@ -5109,7 +5122,7 @@ begin
                 keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                   else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                     keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-
+      infoLabel.Text:='Поздравляем!';
       end else if words[2]='' then begin
           rc1:=#0;
           rc2:=#0;
@@ -5145,7 +5158,7 @@ begin
                   keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                     else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                       keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-
+          infoLabel.Text:='Поздравляем!';
           end else if words[3]='' then begin
               rc1:=#0;
               rc2:=#0;
@@ -5181,7 +5194,7 @@ begin
                     keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                       else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                         keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-
+              infoLabel.Text:='Поздравляем!';
               end else if words[4]='' then begin
                   rc1:=#0;
                   rc2:=#0;
@@ -5217,7 +5230,7 @@ begin
                           keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                             else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                               keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-
+                  infoLabel.Text:='Поздравляем!';
                   end else if words[5]='' then begin
                       rc1:=#0;
                       rc2:=#0;
@@ -5253,7 +5266,7 @@ begin
                               keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                                 else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                                   keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-
+                      infoLabel.Text:='Поздравляем!';
                       end else if words[6]='' then begin
                           rc1:=#0;
                           rc2:=#0;
@@ -5289,7 +5302,7 @@ begin
                                   keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                                     else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                                       keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-
+                          infoLabel.Text:='Поздравляем!';
                           end
         end else begin
             InfoLabel.TextSettings.FontColor:=TAlphaColorRec.Red;

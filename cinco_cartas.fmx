@@ -1,0 +1,864 @@
+﻿object Form2: TForm2
+  Left = 0
+  Top = 0
+  Caption = 'Form2'
+  ClientHeight = 700
+  ClientWidth = 408
+  Position = Designed
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 3
+  object info: TButton
+    Position.X = 35.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 39
+    Text = 'i'
+    OnClick = infoClick
+  end
+  object settings: TButton
+    Position.X = 259.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = #9881
+  end
+  object meaning: TButton
+    Position.X = 219.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 32.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = '?'
+  end
+  object й: TButton
+    StyledSettings = [Family, Style]
+    Position.X = -6.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 37
+    Text = #1081
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = йClick
+  end
+  object ц: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 34.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 34
+    Text = #1094
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = цClick
+  end
+  object у: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 74.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 35
+    Text = #1091
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = уClick
+  end
+  object к: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 30
+    Text = #1082
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = кClick
+  end
+  object е: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 154.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 36
+    Text = #1077
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = еClick
+  end
+  object н: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 194.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 31
+    Text = #1085
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = нClick
+  end
+  object г: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 234.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 33
+    Text = #1075
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = гClick
+  end
+  object ш: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 274.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 26
+    Text = #1096
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = шClick
+  end
+  object ф: TButton
+    StyledSettings = [Family, Style]
+    Position.X = -6.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 32
+    Text = #1092
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = фClick
+  end
+  object ы: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 34.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 27
+    Text = #1099
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = ыClick
+  end
+  object в: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 74.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 29
+    Text = #1074
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = вClick
+  end
+  object а: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 22
+    Text = #1072
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = аClick
+  end
+  object п: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 154.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 28
+    Text = #1087
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = пClick
+  end
+  object р: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 194.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 23
+    Text = #1088
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = рClick
+  end
+  object о: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 234.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 25
+    Text = #1086
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = оClick
+  end
+  object л: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 274.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 18
+    Text = #1083
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = лClick
+  end
+  object я: TButton
+    StyledSettings = [Family, Style]
+    Position.X = -6.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 24
+    Text = #1103
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = яClick
+  end
+  object ч: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 34.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 19
+    Text = #1095
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = чClick
+  end
+  object с: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 74.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 21
+    Text = #1089
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = сClick
+  end
+  object м: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 13
+    Text = #1084
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = мClick
+  end
+  object и: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 154.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 20
+    Text = #1080
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = иClick
+  end
+  object т: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 194.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 14
+    Text = #1090
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = тClick
+  end
+  object ь: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 234.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 17
+    Text = #1100
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = ьClick
+  end
+  object б: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 274.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    Text = #1073
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = бClick
+  end
+  object щ: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 314.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 15
+    Text = #1097
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = щClick
+  end
+  object з: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 354.000000000000000000
+    Position.Y = 480.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 10
+    Text = #1079
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = зClick
+  end
+  object х: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 194.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 12
+    Text = #1093
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = хClick
+  end
+  object ъ: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 274.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 5
+    Text = #1098
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = ъClick
+  end
+  object д: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 314.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 11
+    Text = #1076
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = дClick
+  end
+  object ж: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 6
+    Text = #1078
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = жClick
+  end
+  object э: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 234.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 7
+    Text = #1101
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = эClick
+  end
+  object enter: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 354.000000000000000000
+    Position.Y = 520.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = #8629
+    TextSettings.Font.Size = 35.000000000000000000
+    TextSettings.FontColor = claGreen
+    OnClick = enterClick
+  end
+  object ю: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 314.000000000000000000
+    Position.Y = 560.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 16
+    Text = #1102
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = юClick
+  end
+  object delete: TButton
+    AutoTranslate = False
+    StyledSettings = [Family, Style]
+    Position.X = -6.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 80.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 8
+    Text = #9003
+    TextSettings.Font.Size = 15.000000000000000000
+    TextSettings.FontColor = claChocolate
+    OnClick = deleteClick
+  end
+  object ё: TButton
+    StyledSettings = [Family, Style]
+    Position.X = 154.000000000000000000
+    Position.Y = 600.000000000000000000
+    Size.Width = 40.000000000000000000
+    Size.Height = 40.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    Text = #1105
+    TextSettings.Font.Size = 20.000000000000000000
+    OnClick = ёClick
+  end
+  object R11: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 51.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 69
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R21: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 51.000000000000000000
+    Position.Y = 135.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 64
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R41: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 51.000000000000000000
+    Position.Y = 260.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 67
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R31: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 51.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 60
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R61: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 51.000000000000000000
+    Position.Y = 386.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 66
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R51: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 51.000000000000000000
+    Position.Y = 323.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 54
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R12: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 68
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R22: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 134.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 63
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R42: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 260.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 65
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R32: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 58
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R62: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 386.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 61
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R52: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 114.000000000000000000
+    Position.Y = 323.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 48
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R13: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 177.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 62
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R23: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 177.000000000000000000
+    Position.Y = 134.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 57
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R43: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 177.000000000000000000
+    Position.Y = 260.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 59
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R33: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 177.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 52
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R63: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 177.000000000000000000
+    Position.Y = 386.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 55
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R53: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 177.000000000000000000
+    Position.Y = 323.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 43
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R14: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 240.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 56
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R24: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 240.000000000000000000
+    Position.Y = 134.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 51
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R44: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 240.000000000000000000
+    Position.Y = 260.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 53
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R34: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 240.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 46
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R64: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 240.000000000000000000
+    Position.Y = 386.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 49
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R54: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 240.000000000000000000
+    Position.Y = 323.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 41
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R15: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 303.000000000000000000
+    Position.Y = 72.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 50
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R25: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 303.000000000000000000
+    Position.Y = 134.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 45
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R45: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 303.000000000000000000
+    Position.Y = 260.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 47
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R35: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 303.000000000000000000
+    Position.Y = 197.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 42
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R65: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 303.000000000000000000
+    Position.Y = 386.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 44
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object R55: TButton
+    Enabled = False
+    StyledSettings = [Family, Style]
+    Position.X = 303.000000000000000000
+    Position.Y = 323.000000000000000000
+    Size.Width = 55.000000000000000000
+    Size.Height = 55.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 40
+    TextSettings.Font.Size = 50.000000000000000000
+    TextSettings.VertAlign = Trailing
+  end
+  object Label1: TLabel
+    Position.X = 51.000000000000000000
+    Position.Y = 41.000000000000000000
+    TabOrder = 72
+  end
+  object Label2: TLabel
+    Position.X = 276.000000000000000000
+    Position.Y = 41.000000000000000000
+    TabOrder = 71
+  end
+  object InfoLabel: TLabel
+    StyledSettings = [Family, Size, Style]
+    Position.X = 83.000000000000000000
+    Position.Y = 449.000000000000000000
+    Size.Width = 249.000000000000000000
+    Size.Height = 23.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.HorzAlign = Center
+    TabOrder = 70
+  end
+  object start: TButton
+    Position.X = 131.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 49.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 38
+    Text = 'start'
+    OnClick = startClick
+  end
+  object stats: TButton
+    Position.X = 299.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 73.000000000000000000
+    Size.Height = 33.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 73
+    Text = 'stats'
+  end
+end
