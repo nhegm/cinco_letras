@@ -118,6 +118,8 @@ type
     procedure deleteClick(Sender: TObject);
     procedure enterClick(Sender: TObject);
     procedure startClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
+
 
   private
     { Private declarations }
@@ -310,50 +312,86 @@ const voc: array [1..1550] of string [5]=('аббат','абзац','аборт','абрис',
 'юноша','юрист','ябеда','ягода','ягуар','яичко','якорь','ямщик','ярлык',
 'ясень','яства');
 
-var row,s,check,otvet,colorstr: string [5];
+var row,s,check,otvet,colorstr: string [5];      // row - вводимая строка, check - оттгадываемое слово
     rc1, rc2, rc3, rc4, rc5: char;               // буквы, что пишутся в строки
-    input: text;
-    i,j,k,wins: integer;                              // разные счетчики
+    i,j,k,l,wins: integer;                       // разные счетчики
     a: array [1..1550] of string;                // массив всего словаря
     words: array [1..6] of string [5];           // массив со всеми ответами
-    f: boolean;
-    sym: array [1..5] of boolean;
-    ask,ques: array [1..5] of integer;
+    f: boolean;                                  // вводимое слово из словаря?
+    ask,ques: array [1..5] of integer;           // ques - совпадения в отгадываем; ask - в ответном
+    keys: array [1..33] of TButton;
+
+procedure TForm2.FormCreate(Sender: TObject);
+begin
+  keys[1]:=а;
+  keys[2]:=б;
+  keys[3]:=в;
+  keys[4]:=г;
+  keys[5]:=д;
+  keys[6]:=е;
+  keys[7]:=ж;
+  keys[8]:=з;
+  keys[9]:=и;
+  keys[10]:=й;
+  keys[11]:=к;
+  keys[12]:=л;
+  keys[13]:=м;
+  keys[14]:=н;
+  keys[15]:=о;
+  keys[16]:=п;
+  keys[17]:=р;
+  keys[18]:=с;
+  keys[19]:=т;
+  keys[20]:=у;
+  keys[21]:=ф;
+  keys[22]:=х;
+  keys[23]:=ц;
+  keys[24]:=ч;
+  keys[25]:=ш;
+  keys[26]:=щ;
+  keys[27]:=ъ;
+  keys[28]:=ы;
+  keys[29]:=ь;
+  keys[30]:=э;
+  keys[31]:=ю;
+  keys[32]:=я;
+  keys[33]:=ё;
+end;
 
 procedure matches (s1,s2: string);
+
 begin
-    for i:=1 to 5 do                                // full match
-    if (s1[i]=s2[i]) then begin
-      ask[i]:=2;
-      ques[i]:=2;
-    end;
-    i:=1;
-    while i<6 do begin                              // match in the word
-     j:=1;
-     while (j<6) and (ques[i]=0) do begin
-       if (s1[i]=s2[j]) and (ques[i]=0) and (ask[j]=0) then begin
-         ask[j]:=1;
-         ques[i]:=1;
-        end;
-        j:=j+1;
+  for i:=1 to 5 do                                // full match
+  if (s1[i]=s2[i]) then begin
+    ask[i]:=2;
+    ques[i]:=2;
+  end;
+  i:=1;
+  while i<6 do begin                              // match in the word
+   j:=1;
+   while (j<6) and (ques[i]=0) do begin
+     if (s1[i]=s2[j]) and (ques[i]=0) and (ask[j]=0) then begin
+       ask[j]:=1;
+       ques[i]:=1;
       end;
-      i:=i+1
+      j:=j+1;
     end;
-    for i := 1 to 5 do
-      otvet:=otvet+inttostr(ask[i]);
-
-
+    i:=i+1
+  end;
+  for i := 1 to 5 do
+    otvet:=otvet+inttostr(ask[i]);
 end;
 
 procedure TForm2.йClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='й';
       rc1:='й';
     end else
       if R12.Text='' then begin
-        R12.Text:='й';
+//        R12.Text:='й';
         rc2:='й';
       end else
         if R13.Text='' then begin
@@ -479,6 +517,7 @@ end;
 
 procedure TForm2.цClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ц';
@@ -611,6 +650,7 @@ end;
 
 procedure TForm2.уClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='у';
@@ -743,6 +783,7 @@ end;
 
 procedure TForm2.кClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='к';
@@ -875,6 +916,7 @@ end;
 
 procedure TForm2.еClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='е';
@@ -1007,6 +1049,7 @@ end;
 
 procedure TForm2.нClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='н';
@@ -1139,6 +1182,7 @@ end;
 
 procedure TForm2.гClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='г';
@@ -1271,6 +1315,7 @@ end;
 
 procedure TForm2.шClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ш';
@@ -1403,6 +1448,7 @@ end;
 
 procedure TForm2.щClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='щ';
@@ -1535,6 +1581,7 @@ end;
 
 procedure TForm2.зClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='з';
@@ -1667,6 +1714,7 @@ end;
 
 procedure TForm2.фClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ф';
@@ -1799,6 +1847,7 @@ end;
 
 procedure TForm2.ыClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ы';
@@ -1931,6 +1980,7 @@ end;
 
 procedure TForm2.вClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='в';
@@ -2063,6 +2113,7 @@ end;
 
 procedure TForm2.аClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='а';
@@ -2190,17 +2241,11 @@ begin
               rc5:='а';
             end;
   row:=rc1+rc2+rc3+rc4+rc5;
-  //  label1.Text:=row;
-  for i:=1 to 6 do begin
-    colorstr:=words[i];
-    for j := 1 to 5 do
-      if colorstr[j]=check[j] then
-        а.TextSettings.FontColor:=TAlphaColorRec.Green;
-    end;
-end;
+  end;
 
 procedure TForm2.пClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='п';
@@ -2333,6 +2378,7 @@ end;
 
 procedure TForm2.рClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='р';
@@ -2465,6 +2511,7 @@ end;
 
 procedure TForm2.оClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='о';
@@ -2597,6 +2644,7 @@ end;
 
 procedure TForm2.лClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='л';
@@ -2729,6 +2777,7 @@ end;
 
 procedure TForm2.дClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='д';
@@ -2861,6 +2910,7 @@ end;
 
 procedure TForm2.яClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='я';
@@ -2993,6 +3043,7 @@ end;
 
 procedure TForm2.чClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ч';
@@ -3125,6 +3176,7 @@ end;
 
 procedure TForm2.сClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='с';
@@ -3257,6 +3309,7 @@ end;
 
 procedure TForm2.мClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='м';
@@ -3389,6 +3442,7 @@ end;
 
 procedure TForm2.иClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='и';
@@ -3521,6 +3575,7 @@ end;
 
 procedure TForm2.тClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='т';
@@ -3653,6 +3708,7 @@ end;
 
 procedure TForm2.ьClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ь';
@@ -3785,6 +3841,7 @@ end;
 
 procedure TForm2.бClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='б';
@@ -3917,6 +3974,7 @@ end;
 
 procedure TForm2.юClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ю';
@@ -4049,6 +4107,7 @@ end;
 
 procedure TForm2.жClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ж';
@@ -4181,6 +4240,7 @@ end;
 
 procedure TForm2.ёClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ё';
@@ -4313,6 +4373,7 @@ end;
 
 procedure TForm2.хClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='х';
@@ -4445,6 +4506,7 @@ end;
 
 procedure TForm2.эClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='э';
@@ -4577,6 +4639,7 @@ end;
 
 procedure TForm2.ъClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then
     if R11.Text='' then begin
       R11.Text:='ъ';
@@ -4712,26 +4775,16 @@ begin
   InfoLabel.TextSettings.FontColor:=TAlphaColorRec.Black;
   delete.Enabled:=true;
   enter.Enabled:=true;
-(*  AssignFile(input, '.\assets\internal\rus_5_down.txt');
-  reset(input);
-  k:=0;
-  while not eof(input) do begin
-    inc(k);
-    readln(input,s);
-    a[k]:=s;
-  end;
-  k:=random(k)+1;                            *)
-//  label2.Text:=a[k];
-  //  label1.Text:='';
-  k:=random(1550)+1;
-//  k:=1;
+  k:=random(length(voc))+1;
   InfoLabel.Text:='Погнали!';
- // closefile(input);
   otvet:='';
-    for i:=1 to 5 do begin
-      ask[i]:=0;
-      ques[i]:=0;
-    end;
+  for i:=1 to 5 do begin
+    ask[i]:=0;
+    ques[i]:=0;
+  end;
+
+  for I := 1 to 33 do
+    keys[i].TextSettings.FontColor:=TAlphaColorRec.Black;
 
   rc1:=#0; rc2:=#0; rc3:=#0; rc4:=#0; rc5:=#0;
   row:='';
@@ -4783,6 +4836,7 @@ end;
 
 procedure TForm2.deleteClick(Sender: TObject);
 begin
+  InfoLabel.Text:='';
   if words[1]='' then begin
   R11.TextSettings.FontColor:=TAlphaColorRec.Black;
   R12.TextSettings.FontColor:=TAlphaColorRec.Black;
@@ -5038,6 +5092,23 @@ begin
         if ask[3]=1 then R13.TextSettings.FontColor:=TAlphaColorRec.Yellow;
         if ask[4]=1 then R14.TextSettings.FontColor:=TAlphaColorRec.Yellow;
         if ask[5]=1 then R15.TextSettings.FontColor:=TAlphaColorRec.Yellow;
+        for j := 1 to 5 do
+          for i := 1 to 32 do
+            if (ord(row[j])=223+i) then
+              if ask[j]=2 then
+                keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                  keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                    else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) then
+                      keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+        for j := 1 to 5 do
+          if (row[j]='ё') then
+            if ask[j]=2 then
+              keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+              else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                  else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                    keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
 
       end else if words[2]='' then begin
           rc1:=#0;
@@ -5057,6 +5128,24 @@ begin
           if ask[3]=1 then R23.TextSettings.FontColor:=TAlphaColorRec.Yellow;
           if ask[4]=1 then R24.TextSettings.FontColor:=TAlphaColorRec.Yellow;
           if ask[5]=1 then R25.TextSettings.FontColor:=TAlphaColorRec.Yellow;
+          for j := 1 to 5 do
+          for i := 1 to 32 do
+            if (ord(row[j])=223+i) then
+              if ask[j]=2 then
+                keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                  keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                    else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                      keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+          for j := 1 to 5 do
+            if (row[j]='ё') then
+              if ask[j]=2 then
+                keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                  keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                    else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                      keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+
           end else if words[3]='' then begin
               rc1:=#0;
               rc2:=#0;
@@ -5075,6 +5164,23 @@ begin
               if ask[3]=1 then R33.TextSettings.FontColor:=TAlphaColorRec.Yellow;
               if ask[4]=1 then R34.TextSettings.FontColor:=TAlphaColorRec.Yellow;
               if ask[5]=1 then R35.TextSettings.FontColor:=TAlphaColorRec.Yellow;
+              for j := 1 to 5 do
+                for i := 1 to 32 do
+                  if (ord(row[j])=223+i) then
+                    if ask[j]=2 then
+                      keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                      else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                        keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                          else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                            keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+                        for j := 1 to 5 do
+              if (row[j]='ё') then
+                if ask[j]=2 then
+                  keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                  else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                    keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                      else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                        keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
 
               end else if words[4]='' then begin
                   rc1:=#0;
@@ -5094,6 +5200,23 @@ begin
                   if ask[3]=1 then R43.TextSettings.FontColor:=TAlphaColorRec.Yellow;
                   if ask[4]=1 then R44.TextSettings.FontColor:=TAlphaColorRec.Yellow;
                   if ask[5]=1 then R45.TextSettings.FontColor:=TAlphaColorRec.Yellow;
+                  for j := 1 to 5 do
+                    for i := 1 to 32 do
+                      if (ord(row[j])=223+i) then
+                        if ask[j]=2 then
+                          keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                          else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                            keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                              else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+                  for j := 1 to 5 do
+                    if (row[j]='ё') then
+                      if ask[j]=2 then
+                        keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                        else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                          keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                            else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                              keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
 
                   end else if words[5]='' then begin
                       rc1:=#0;
@@ -5113,6 +5236,23 @@ begin
                       if ask[3]=1 then R53.TextSettings.FontColor:=TAlphaColorRec.Yellow;
                       if ask[4]=1 then R54.TextSettings.FontColor:=TAlphaColorRec.Yellow;
                       if ask[5]=1 then R55.TextSettings.FontColor:=TAlphaColorRec.Yellow;
+                      for j := 1 to 5 do
+                        for i := 1 to 32 do
+                          if (ord(row[j])=223+i) then
+                            if ask[j]=2 then
+                              keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                              else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                                  else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                    keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+                      for j := 1 to 5 do
+                        if (row[j]='ё') then
+                          if ask[j]=2 then
+                            keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                            else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                              keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                                else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                  keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
 
                       end else if words[6]='' then begin
                           rc1:=#0;
@@ -5132,12 +5272,28 @@ begin
                           if ask[3]=1 then R63.TextSettings.FontColor:=TAlphaColorRec.Yellow;
                           if ask[4]=1 then R64.TextSettings.FontColor:=TAlphaColorRec.Yellow;
                           if ask[5]=1 then R65.TextSettings.FontColor:=TAlphaColorRec.Yellow;
+                          for j := 1 to 5 do
+                            for i := 1 to 32 do
+                              if (ord(row[j])=223+i) then
+                                if ask[j]=2 then
+                                  keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                                  else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                    keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                                      else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                        keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
+                          for j := 1 to 5 do
+                            if (row[j]='ё') then
+                              if ask[j]=2 then
+                                keys[i].TextSettings.FontColor:=TAlphaColorRec.Green
+                                else if (ask[j]=1) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                  keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
+                                    else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
+                                      keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
 
                           end
         end else begin
             InfoLabel.TextSettings.FontColor:=TAlphaColorRec.Red;
             InfoLabel.Text:='Такого слова не существует';
-
             end;
   end;
   if (words[6]<>'') and (words[6]<>check) then
@@ -5146,6 +5302,9 @@ begin
     inc(wins);
     stats.Text:=inttostr(wins);
   end;
-  end;
+  if True then
+
+end;
+
 
 end.
