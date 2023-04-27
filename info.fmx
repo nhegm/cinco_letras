@@ -15,20 +15,72 @@ object infoForm: TinfoForm
   OnCreate = FormCreate
   DesignerMasterStyle = 3
   object Button1: TButton
+    StyledSettings = [Family, Style, FontColor]
     Position.X = 104.000000000000000000
     Position.Y = 256.000000000000000000
     Size.Width = 84.000000000000000000
     Size.Height = 36.000000000000000000
     Size.PlatformDefault = False
     TabOrder = 0
-    Text = 'Button1'
+    Text = 'OK'
+    TextSettings.Font.Size = 15.000000000000000000
     OnClick = Button1Click
   end
   object infoText: TText
-    Position.X = 37.000000000000000000
-    Position.Y = 19.000000000000000000
-    Size.Width = 225.000000000000000000
-    Size.Height = 225.000000000000000000
+    Position.X = 107.000000000000000000
+    Position.Y = 67.000000000000000000
+    Size.Width = 118.000000000000000000
+    Size.Height = 30.000000000000000000
     Size.PlatformDefault = False
+    Text = #1074#1077#1088#1085#1086#1077' '#1087#1086#1083#1086#1078#1077#1085#1080#1077
+    TextSettings.HorzAlign = Leading
+  end
+  object Text1: TText
+    Position.X = 107.000000000000000000
+    Position.Y = 115.000000000000000000
+    Size.Width = 147.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = #1090#1072#1082#1072#1103' '#1073#1091#1082#1074#1072' '#1077#1089#1090#1100' '#1074' '#1089#1083#1086#1074#1077
+    TextSettings.HorzAlign = Leading
+  end
+  object Text4: TText
+    Position.X = 5.000000000000000000
+    Position.Y = 67.000000000000000000
+    Size.Width = 94.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = #1047#1077#1083#1105#1085#1099#1081'  '
+    TextSettings.FontColor = claGreen
+    TextSettings.HorzAlign = Trailing
+  end
+  object Text5: TText
+    Position.X = 5.000000000000000000
+    Position.Y = 115.000000000000000000
+    Size.Width = 94.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = #1046#1105#1083#1090#1099#1081'  '
+    TextSettings.FontColor = claYellow
+    TextSettings.HorzAlign = Trailing
+  end
+  object Text6: TText
+    Position.X = 5.000000000000000000
+    Position.Y = 171.000000000000000000
+    Size.Width = 94.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = #1041#1077#1083#1099#1081
+    TextSettings.FontColor = claWhite
+    TextSettings.HorzAlign = Trailing
+  end
+  object Text2: TText
+    Position.X = 107.000000000000000000
+    Position.Y = 171.000000000000000000
+    Size.Width = 139.000000000000000000
+    Size.Height = 30.000000000000000000
+    Size.PlatformDefault = False
+    Text = #1090#1072#1082#1080#1093' '#1073#1091#1082#1074' '#1085#1077#1090' '#1074' '#1089#1083#1086#1074#1077
+    TextSettings.HorzAlign = Leading
   end
 end

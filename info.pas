@@ -11,6 +11,11 @@ type
   TinfoForm = class(TForm)
     Button1: TButton;
     infoText: TText;
+    Text1: TText;
+    Text2: TText;
+    Text4: TText;
+    Text5: TText;
+    Text6: TText;
     procedure Button1Click(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
@@ -35,9 +40,6 @@ procedure TinfoForm.FormCreate(Sender: TObject);
 begin
   height:= 300;
   width:= 300;
-  infoText.Text:='Hello, kitty.';
-  infoText.Text:='Зеленый - это хорошо';
-  infoText.Text:='Белый - таких букв нет';
 end;
 
 end.

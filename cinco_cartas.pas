@@ -5122,7 +5122,7 @@ begin
                 keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                   else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                     keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-      infoLabel.Text:='Поздравляем!';
+
       end else if words[2]='' then begin
           rc1:=#0;
           rc2:=#0;
@@ -5158,7 +5158,7 @@ begin
                   keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                     else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                       keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-          infoLabel.Text:='Поздравляем!';
+
           end else if words[3]='' then begin
               rc1:=#0;
               rc2:=#0;
@@ -5194,7 +5194,7 @@ begin
                     keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                       else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                         keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-              infoLabel.Text:='Поздравляем!';
+
               end else if words[4]='' then begin
                   rc1:=#0;
                   rc2:=#0;
@@ -5230,7 +5230,7 @@ begin
                           keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                             else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                               keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-                  infoLabel.Text:='Поздравляем!';
+
                   end else if words[5]='' then begin
                       rc1:=#0;
                       rc2:=#0;
@@ -5266,7 +5266,7 @@ begin
                               keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                                 else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                                   keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-                      infoLabel.Text:='Поздравляем!';
+
                       end else if words[6]='' then begin
                           rc1:=#0;
                           rc2:=#0;
@@ -5302,8 +5302,10 @@ begin
                                   keys[i].TextSettings.FontColor:=TAlphaColorRec.Yellow
                                     else if (ask[j]=0) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Yellow) and (keys[i].TextSettings.FontColor<>TAlphaColorRec.Green) then
                                       keys[i].TextSettings.FontColor:=TAlphaColorRec.White;
-                          infoLabel.Text:='Поздравляем!';
-                          end
+
+                          end;
+                          if row=check then
+                            infoLabel.Text:='Поздравляем!';
         end else begin
             InfoLabel.TextSettings.FontColor:=TAlphaColorRec.Red;
             InfoLabel.Text:='Такого слова не существует';
